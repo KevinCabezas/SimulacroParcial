@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/form.css" /> -->
+
+    <script src="js/index.js" type="module" defer></script>
+
+
+    <title>Simulacro</title>
+</head>
+<body>
+  <header>
+    <div class="menu">
+        <img src="" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Algo</a></li>
+                <li><a href="#">Algo</a></li>
+                <li><a href="#">Algo</a></li>
+                <li><a href="#">Algo</a></li>
+            </ul>
+        </nav>
+    </div>    
+  </header>
+  <div class="container seccion">
+    <section>
+      <form action="" method="post" id="form-item">
+        <div class="form-group">
+            <label for="titulo">Titulo</label>
+            <input
+              type="text"
+              required
+              name="titulo"
+              id="titulo"
+              placeholder="Titulo"
+            />
+        </div>
+        <div class="form-group">
+            <label for="transaccion">TRANSACCION</label>
+            <label for="transaccion">VENTA</label>
+            <input
+                type="radio"
+                required
+                name="transaccion"
+                id="transaccion"
+            />
+            <label for="transaccion">ALQUILER</label>
+            <input
+                type="radio"
+                required
+                name="transaccion"
+                id="transaccion"
+            />
+        </div>
+       
+        <div class="form-group">
+            <label for="descripcion">DESCRIPCION</label>
+            <input
+              type="text"
+              required
+              name="descripcion"
+              id="descripcion"
+              placeholder="descripcion"
+            />
+        </div>
+        <div class="form-group">
+            <label for="precio">PRECIO</label>
+            <input
+              type="number"
+              required
+              name="precio"
+              id="precio"
+              placeholder="Precio"
+            />
+        </div>
+        <div class="form-group">
+            <input
+              type="number"
+              required
+              name="puertas"
+              id="puertas"
+              placeholder="Puertas"
+            />
+            <input
+              type="number"
+              required
+              name="kms"
+              id="kms"
+              placeholder="KMs"
+            />
+            <input
+              type="number"
+              required
+              name="potencia"
+              id="potencia"
+              placeholder="Potencia"
+            />
+        </div>
+      </form>  
+      <!-- boton -->
+      <button id="buton-guardar">Guardar</button>
+
+      <!-- tabla -->
+      <div class="container-table flex">
+        <table id="table-items" class="table-items table-stripped flex">
+          <thead>
+            <tr class="flex">
+              <th>ID</th>
+              <th>Titulo</th>
+              <th>Transaccion</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+              <th>Puertas</th>
+              <th>KMs</th>
+              <th>Potencia</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+    
+</body>
+</html>
